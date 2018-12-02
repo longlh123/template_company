@@ -20,6 +20,8 @@
 				<a href='#'><i class='fa fa-fw fa-user'></i>Login</a>
 			</div>
 			<a href="javascript:void(0);" class="nav_icon" onclick='navbarFunction()'><i class="fa fa-bars"></i></a>
+
+			<!--javascript:void(0) sử dụng giống như # => ngăn trình duyệt chuyển tiếp sang trang khác-->
 		</div>
 
 		<div class='header'>
@@ -83,13 +85,17 @@
 	<script type="text/javascript">
 		function navbarFunction(){
 			var x = document.getElementById("nav_links");
+			var y = document.getElementsByClassName("active");
+
 			if(x.style.display === "block")
 			{
 				x.style.display = "none";
+				y[0].style.borderBottom = "none";
 			}
 			else
 			{
 				x.style.display = "block";
+				y[0].style.borderBottom = "thin solid #ffffff";
 			}
 		}
 	</script>
