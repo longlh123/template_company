@@ -17,18 +17,18 @@ html{box-sizing: border-box;}
 body{margin: 0;padding: 0;}
 
 html, body{
-	font-family: Verdana,sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6{
-	font-family: "Segoe UI",Arial,sans-serif;
+	font-family: "Segoe UI", Arial, sans-serif;
 	font-weight: 400;
 	margin: 10px 0;
 }
 
-h1{font-size: 36px;}
+h1{font-size: 36px;} 
 h2{font-size: 30px;}
 h3{font-size: 24px;}
 h4{font-size: 20px;}
@@ -51,42 +51,47 @@ h6{font-size: 16px;}
 /*--NAVBAR--*/
 .navbar{
 	overflow: hidden;
-	background-color: #105679;
-	position: sticky;
-	position: -webkit-sticky;
+	position: fixed;
 	top: 0;
+	display: inline-block;
+	width: 100%;
+	background-color: #105679;
+}
+
+.navbar #nav_links{
+	display: none;
 }
 
 .navbar a{
-	float: none;
 	display: block;
 	color: white;
-	text-align: center;
 	padding: 14px 20px;
 	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a.nav_icon{
+	background-color: #105679;
+	display: block;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .navbar a:hover{
-	background-color: #CAB1BF;
-}
-
-.navbar a.right{
-	float: none;
+	background-color: #105679;
 }
 
 .navbar a.active{
-	background-color: #CAB1BF;
+	background-color: #105679;
 }
 
 @media screen and (min-width: 768px){
-	.navbar a{
-		float: left;
-	}
+	
 
-	.navbar a.right{
-		float: right;
-	}
 }
+
 
 
 [class*="col-"]{
