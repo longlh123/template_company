@@ -58,18 +58,16 @@
                </div>
             </nav>
          </header>
-         <img src="img/background.jpg" style="position: absolute; opacity: 0.25">
+         <!--<img src="img/background.jpg" style="position: absolute; opacity: 0.25; z-index: -1">-->
          <nav class="breadcrumb-nav">
             <div class="line size-1140">
-               <ul>
-                  <li><a href="index.html" class="icon-sli-home"></a></li>
-                  <li><a href="/">Catalogue</a></li>
-                  <li><a href="/">First Category</a></li>
-                  <li><span>Sub Category 1</span></li>
+               <ul id="breadcrumb">
+                  <li id="breadcrumb_home"><a href="index.html" class="icon-sli-home"></a></li>
+                  <li id="breadcrumb_slide_1_1"><a class="idx_slide">Slide 1</a></li>
                </ul>
             </div>
          </nav>
-         <section id="slide_1">
+         <section id="slide_1" class="line size-1140">
             <div class="line size-1140" id="slide_1_1">
                <div class="margin">
                   <div class="title s-12">
@@ -86,44 +84,69 @@
               </div>
             </div>
             <div class="line size-1140" id="slide_1_2">
-               <div class="margin">
-                  <div class="title s-12">
-                     <h3>Yêu cầu chung của giai đoạn trước khi start field</h3>   
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/yeucauchung_1.png" alt="" />
-                     <div class="context">
-                        <b>Không viết proposal nếu chưa nói chuyện trực tiếp với KH</b> F2F hoặc qua điện thoại để tránh hiểu không đúng hoặc không đủ yêu cầu của khách hàng.
+               <div class="title s-12">
+                  <h3>Giai đoạn trước khi start field – Yêu cầu chung</h3>   
+               </div>
+               <div class="imgs s-12">
+                  <div class="margin">
+                     <div class="s-12 m-6 l-4">
+                        <img src="img/yeucauchung_1.png" alt="" />
+                        <div class="context">
+                           <b>Không viết proposal nếu chưa nói chuyện trực tiếp với khách hàng</b> F2F hoặc qua điện thoại để tránh hiểu không đúng hoặc không đủ yêu cầu của khách hàng.
+                        </div>
                      </div>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/yeucauchung_2.png" alt="" />
-                     <div class="context">
-                        <b>Không được start field nếu chưa nhận được hợp đồng đã ký từ khách hàng</b> để đảm bảo về mặt thanh toán sau này. Trường hợp ngoại lệ phải có approval của FN.
+                     <div class="s-12 m-6 l-4">
+                        <img src="img/yeucauchung_2.png" alt="" />
+                        <div class="context">
+                           <b>Không được start field nếu chưa nhận được hợp đồng đã ký từ khách hàng</b> để đảm bảo về mặt thanh toán sau này. Trường hợp ngoại lệ phải có approval của FN.
+                        </div>
                      </div>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/yeucauchung_3.png" alt="" />
-                     <div class="context">
-                        <b>Cost dự án phải được approve trước ngày start field ít nhất 3 ngày làm việc</b> để FN kịp tạm ứng tiền để thực hiện dự án. Tất cả nhân viên không được tự ứng tiền cá nhân để thực hiện dự án.
-                     </div>
-                  </div>
-                  <div class="s-12 m-6 l-3">
-                     <img src="img/yeucauchung_4.png" alt="" />
-                     <div class="context">
-                        <b>Phải update iquote trước khi start field ít nhất 0.5 ngày làm việc</b> để đảm bảo cost trên iquote phải khớp với cost thực tế trên hệ thống Symphony để phục vụ cho việc phân tích báo cáo tài chính.
+                     <div class="s-12 m-6 l-4">
+                        <img src="img/yeucauchung_3.png" alt="" />
+                        <div class="context">
+                           <b>Cost dự án phải được approve trước ngày start field ít nhất 3 ngày làm việc</b> để FN kịp tạm ứng tiền để thực hiện dự án, tránh trường hợp nhân viên phải tự ứng tiền cá nhân để thực hiện dự án.
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
             <div class="line size-1140" id="slide_1_3">
                <div class="title s-12">
-                  <h3>Hướng dẫn CS check timing và book dự án với OP khi báo giá cho KH</h3>   
+                  <h3>Hướng dẫn book dự án để lấy báo giá.</h3>   
                </div>
                <div class="context s-12">
                   <lo class="steps">
-                     <li>CS điền vào file <b>“Form 001 - Thong bao du an”</b> – Dowload file mẫu tại đây</li>
-                     <li>CS gửi file <b>“thông tin dự án”</b> cho nhóm <a href="#blank">DUGVietNamOPSProjectRegisterandUpdate@ipsos.com</a> để check timing với OP và book dự án tentitatively. </li>
+                     <li>Logon iQuote: <a href="http://nwb.ipsos.com/Auth/LogOn">http://nwb.ipsos.com/Auth/LogOn</a></li>
+                     <li>Đăng ký dự án trên iQuote – Download file hướng dẫn iQuote tại <a href="#">đây</a>.</li>
+                     <li>Lưu ý cách tạo iquote khác nhau giữa các dự án làm với end client và dự án intercom.</li>
+                  </lo>
+               </div>
+            </div>
+            <div class="line size-1140" id="slide_1_4">
+               <div class="title s-12">
+                  <h3>Hướng dẫn OP điền thông tin trên iquote và gửi báo giá cho CS.</h3>   
+               </div>
+               <div class="context s-12">
+                  <lo class="steps">
+                     <li>Sau khi CS hoàn thành iquote, hệ thống sẽ gửi email đến nhóm DUG.</li>
+                     <li>DUG xuất thông tin dự án trên iquote để hiểu rõ yêu cầu dự án.</li>
+                     <li>DUG hoàn thành điền thông tin trên iquote. Lưu ý phải ghi rõ chú thích nội dung của của các mục cost.</li>
+                     <li>DUG xuất file cost summary từ iquote, kiểm tra trước khi gửi cho CS.</li>
+                     <li>
+                        <p>Lưu ý về timing gửi cost của DUG:</p>
+                        <br/>
+                        <p>&bull; Nếu CS gửi request trước 12h trưa, DUG phải gửi CS 2 files cost trước 12h trưa hôm sau.</p>
+                        <p>&bull; Nếu CS gửi request sau 12h trưa, DUG phải gửi CS 2 files cost trễ nhất EOD ngày hôm sau.</p>
+                     </li>
+                  </lo>
+               </div>
+            </div>
+            <div class="line size-1140" id="slide_1_5">
+               <div class="title s-12">
+                  <h3>Hướng dẫn CS check timing dự án để làm báo giá cho Khách hàng</h3>   
+               </div>
+               <div class="context s-12">
+                  <lo class="steps">
                      <li>
                         <p>Lưu ý khi check timing với OP:</p>
                         <br/>

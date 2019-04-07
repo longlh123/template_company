@@ -8,6 +8,7 @@ padding:3.5em 0;
 footer {
 background:#fff;
 padding:0.825em 0;
+border-top: 1px solid #444;
 }
 
 /* sticky footer css */
@@ -28,6 +29,10 @@ height: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	text-align: justify;
+}
+
+.imgs{
+  margin-top: 70px;
 }
 
 .crumbs{
@@ -66,7 +71,7 @@ height: 100%;
   content: "";  
   border-top: 55px solid transparent;
   border-bottom: 55px solid transparent;
-  border-left: 55px solid #e9e9e9;
+  border-left: 55px solid #fff;
   position: absolute; left: 0; top: 0;
 }
 
@@ -95,6 +100,81 @@ height: 100%;
   border-left-color: #fa5ba5;
 }
 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right: 10px;
+  padding: 16px;
+  color: #d2d2d2;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  left: calc(((100% - 1140px)/ 2) * 0.60)
+}
+
+.next {
+  right: calc(((100% - 1140px)/ 2) * 0.60);
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.steps{
+  clear: both;
+  list-style: none;
+  padding-left: 2%;
+}
+
+.steps li{
+  margin: 1.5em 3.5em;
+  padding-top: 1em;
+  padding-left: 1em;
+  display: block;
+  position: relative;
+  counter-increment: inst;
+}
+
+.steps li::before{
+  content: counter(inst);
+
+  background: rgba(27, 200, 176, 0.5) /*rgba(255, 150, 0, 0.35)*/;
+  color: #fff;
+
+  font-size: 1em;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
+
+  border-radius: 0 0.675em 0.675em 0;
+    font-size: 1.5em;
+    text-align: center;
+
+    padding-top: 0;
+    padding-left: 2.25%;
+    left: -5%;
+    top: -0.65em;
+    height: 1.35em;
+    width: 1.35em;
+    position: absolute;
+  
+    transition: all 0.2s ease-in-out;
+  
+    z-index: -1;
+}
+
+
 .container{
 	background-image: url("../img/background.jpg");
 	background-size: cover;
@@ -112,75 +192,9 @@ height: 100%;
 	min-height: 600px;
 }
 
-.steps{
-	clear: both;
-	list-style: none;
-	padding-left: 2%;
-}
 
-.steps li{
-	margin: 1.5em 3.5em;
-	padding-top: 1em;
-	padding-left: 1em;
-	display: block;
-	position: relative;
-	counter-increment: inst;
-}
 
-.steps li::before{
-	content: counter(inst);
 
-	background: rgba(27, 200, 176, 0.5) /*rgba(255, 150, 0, 0.35)*/;
-	color: #fff;
-
-	font-size: 1em;
-	font-weight: 700;
-	font-style: italic;
-	text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
-
-	border-radius: 0 0.675em 0.675em 0;
-    font-size: 1.5em;
-    text-align: center;
-
-    padding-top: 0;
-    padding-left: 2.25%;
-    left: -5%;
-    top: -0.65em;
-    height: 1.35em;
-    width: 1.35em;
-    position: absolute;
-  
-    transition: all 0.2s ease-in-out;
-  
-    z-index: -1;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  margin-right: 10px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.5);
-}
 
 .with-sticky-footer {
 display: table;
